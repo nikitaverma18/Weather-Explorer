@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝐖𝐞𝐚𝐭𝐡𝐞𝐫 𝐄𝐱𝐩𝐥𝐨𝐫𝐞𝐫</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Currentweather-ICON.avif" type="image/png">
+</head>
+<body>
+
+      <!-- Background video -->
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="Weather-BG-Video.mp4" type="video/mp4">
+  </video>
+
+    <header>
+        <div class="logo">
+            <img src="Header-logIMAGE.png" alt="Weather Logo" class="weather-logo">
+        </div>
+        <h1>Weather Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="#currentWeather">Today's Weather</a></li>
+                <li><a href="#forecast">Forecast</a></li>
+                <li><a href="#weatherDetails">Details</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <input type="text" id="cityInput" placeholder="Search for a city...">
+            <button id="click" onclick="getWeather()">Search</button>
+        </section>
+
+        <section id="currentWeather">
+          <h2>"Current Weather"</h2>
+          <div class="weather-info">
+              <div class="weather-info-left">
+                  <img id="weatherIcon" src="Currentweather-ICON.avif" alt="Weather Icon" class="weather-icon">
+                  <div id="thoughts" class="weather-thoughts"></div>
+                 
+              </div>
+              <div class="weather-info-right">
+                <h3 id="cityName">"Dantewada"</h3>
+                  <p id="currentTemp">Temperature: -- °C</p>
+                  <p id="currentCondition">Condition: --</p>
+                  <p id="airQuality">Air Quality: --</p>
+                  <p id="windSpeed">Wind: -- m/s</p>
+                  <p id="humidity">Humidity: --%</p>
+              </div>
+          </div>
+      </section>
+
+        <section id="forecast">
+            <h2>"5-Day Weather Forecast"</h2>
+            <div id="forecastContainer">
+                <!-- Forecast cards will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="weatherDetails">
+            <h2>"Weather Details"</h2>
+            <div class="details-container">
+                <div class="details-box">
+                    <h3>Temperature</h3>
+                    <p id="detailTemp">-- °C</p>
+                </div>
+                <div class="details-box">
+                    <h3>Cloudiness</h3>
+                    <p id="detailCloudiness">--%</p>
+                </div>
+                <div class="details-box">
+                    <h3>Wind Speed</h3>
+                    <p id="detailWind">-- m/s</p>
+                </div>
+                <div class="details-box">
+                    <h3>Humidity</h3>
+                    <p id="detailHumidity">--%</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Weather Explorer | <a href="#">Contact</a> | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
