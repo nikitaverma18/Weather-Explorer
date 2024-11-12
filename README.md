@@ -2,6 +2,9 @@
 
 Weather Explorer is a dynamic and responsive weather application that lets users search for current weather conditions and a 5-day forecast of any city worldwide. The app provides detailed weather information, including temperature, humidity, wind speed, and air quality. The interface features a background video for a visually engaging experience, along with a user-friendly navigation menu.
 
+Deployment Link You can view the live application here:
+https://weather-explorerapp.netlify.app/
+
 Features
 Background Video: Engaging background video for a more immersive user experience.
 Search Functionality: Users can search for any city's weather information.
